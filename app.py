@@ -7,7 +7,7 @@ app.config["DEBUG"] = True
 
 @app.route('/', methods=['GET'])
 def home():
-    return '''<h1>Hello World 1</h1>'''
+    return '''<h1>Hello World 2</h1>'''
 
 @app.route("/receivemsg",  methods = ['POST'])
 def recive_message():
