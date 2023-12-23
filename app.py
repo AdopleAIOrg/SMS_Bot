@@ -18,6 +18,8 @@ def recive_message():
 
 @app.route('/sms', methods=['POST'])
 def sms():
+    input_msg = request.get_json()  
+    print("Request Received at SMS EndPoint.", input_msg)
     number = request.form['From']
     message_body = request.form['Body']
 
